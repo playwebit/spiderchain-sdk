@@ -1,13 +1,12 @@
 """
 adapters/playwebit_adapter.py
 ------------------------------
-PlayWebit Blockchain Adapter — Spider Chain SDK
+PlayWebit Blockchain Adapter — SpiderWeave SDK
 
-Connects Spider Chain to the PlayWebit Network (chain ID 4968).
-This is the native blockchain of CipherVault.
+Connects SpiderWeave to the PlayWebit Network (chain ID 4968).
 
 Usage:
-    from spiderchain.adapters.playwebit_adapter import PlayWebitAdapter
+    from spiderweave.adapters.playwebit_adapter import PlayWebitAdapter
 
     adapter = PlayWebitAdapter(
         node_url="https://priyanshu23456-cipherv.hf.space"
@@ -19,7 +18,7 @@ import time
 import hashlib
 from typing import Dict, Optional, List
 
-from spiderchain.adapters.base_blockchain_adapter import BaseBlockchainAdapter
+from spiderweave.adapters.base_blockchain_adapter import BaseBlockchainAdapter
 
 
 class PlayWebitAdapter(BaseBlockchainAdapter):
