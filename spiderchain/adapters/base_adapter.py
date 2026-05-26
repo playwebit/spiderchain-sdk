@@ -1,11 +1,11 @@
 """
 adapters/base_adapter.py
 ------------------------
-Base Database Adapter — Spider Chain SDK
+Base Database Adapter — SpiderWeave SDK
 
 Defines the interface every database adapter must implement.
 If you can write these 5 methods for your database,
-Spider Chain works with it automatically.
+SpiderWeave works with it automatically.
 
 Supported out of the box:
     - Supabase  (supabase_adapter.py)
@@ -24,7 +24,7 @@ class BaseDBAdapter(ABC):
     Abstract interface for database adapters.
 
     Every database adapter must implement these 5 methods.
-    Spider Chain calls these methods internally — you never
+    SpiderWeave calls these methods internally — you never
     need to call them directly in your application code.
     """
 
@@ -33,7 +33,7 @@ class BaseDBAdapter(ABC):
         """
         Get the current hash of a single row.
 
-        This is how Spider Chain reads the "fingerprint" of
+        This is how SpiderWeave reads the "fingerprint" of
         each row in each table. If the row changes, the hash
         changes, and the Spider Hash breaks.
 
