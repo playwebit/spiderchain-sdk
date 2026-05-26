@@ -1,11 +1,11 @@
-"""Spider Chain SDK — Adapters"""
+"""SpiderWeave SDK — Adapters"""
 
-from spiderchain.adapters.base_adapter import BaseDBAdapter
-from spiderchain.adapters.base_blockchain_adapter import BaseBlockchainAdapter
-from spiderchain.adapters.supabase_adapter import SupabaseAdapter
-from spiderchain.adapters.postgres_adapter import PostgresAdapter
-from spiderchain.adapters.playwebit_adapter import PlayWebitAdapter
-from spiderchain.adapters.evm_adapter import EVMAdapter
+from spiderweave.adapters.base_adapter import BaseDBAdapter
+from spiderweave.adapters.base_blockchain_adapter import BaseBlockchainAdapter
+from spiderweave.adapters.supabase_adapter import SupabaseAdapter
+from spiderweave.adapters.postgres_adapter import PostgresAdapter
+from spiderweave.adapters.playwebit_adapter import PlayWebitAdapter
+from spiderweave.adapters.evm_adapter import EVMAdapter
 
 __all__ = [
     "BaseDBAdapter",
